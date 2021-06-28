@@ -5,7 +5,8 @@
 }
 
 .row-revese {
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
+    flex-direction: row-reverse;
 }
 
 [class*="col-"] {
