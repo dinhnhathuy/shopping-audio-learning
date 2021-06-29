@@ -477,7 +477,7 @@ ul.devided>li:last-child {
 }
 
 .section {
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 .section-header,
@@ -589,4 +589,144 @@ ul.devided>li:last-child {
 .sp-item-description {
     margin-bottom: 60px;
     text-align: justify;
+}
+
+.blog {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.blog-img,
+.blog-info {
+    width: 50%;
+}
+
+.blog-info {
+    padding: 50px;
+}
+
+.blog-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.blog-preview {
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+footer {
+    padding: 100px 0;
+}
+
+.footer-head {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.contact-header {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+.contact-socials  {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-socials a {
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+.contact-socials a:hover {
+    counter-reset: var(--grey);
+}
+
+.menu li a {
+    transition: transform .3s ease-in-out;
+}
+
+.menu li a:hover {
+    color: var(--red);
+    transform: translateX(10px)
+}
+
+.subcribe {
+    position: relative;
+    margin-top: 20px;
+}
+
+.subcribe input {
+    width: 100%;
+    height: 50px;
+    outline: 0;
+    border: 0;
+    padding: 0 30px;
+}
+
+.subcribe button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    outline: 0;
+    border: 0;
+    background-color: var(--red);
+    color: var(--btn-color);
+    padding: 10px;
+}
+
+.subcribe button:hover {
+    background-color: var(--back);
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1280px) {
+    .mobile-menu {
+        display: flex;
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        overflow-x: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: var(--main-bg-color);
+        z-index: 99;
+        transition: right .3s ease-in-out;
+    }
+
+    .header-wrapper.active {
+        right: 0;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .mb-menu-close {
+        display: block;
+        position: absolute;
+        right: 43px;
+        top: 10px;
+        z-index: 99;
+    }
+    
+    .top-wrapper {
+        display: none;
+    }
+
+    .mid-header, .bottom-header {}
 }
